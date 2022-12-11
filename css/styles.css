@@ -250,10 +250,12 @@ ul {
     position: absolute;
     top: 50%;
     left: 12px;
-    fill: currentColor;
+    fill: var(--color-primary-dark);
     display: inline-block;
     width: 18px;
     height: 18px;
+
+    transition: fill var(--t-duration) var(--t-transition);
 }
 
 .main-signup-inputs {
@@ -261,6 +263,7 @@ ul {
     width: 100%;
     height: 40px;
     box-sizing: border-box;
+    font-size: 14px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -268,17 +271,16 @@ ul {
     margin-bottom: 10px;
     padding: 12px 12px 12px 42px;
 
-    transition: color var(--t-duration) var(--t-transition), border var(--t-duration) var(--t-transition);
+    transition: border var(--t-duration) var(--t-transition);
 }
 
 .main-signup-inputs:focus {
     border: 1px solid var(--color-accent);
-    color: var(--color-accent);
     outline: none;
 }
 
 .main-signup-inputs:focus + .main-signup-icon {
-    color: var(--color-accent);
+    fill: var(--color-accent);
 }
 
 .main-signup-header {
@@ -296,6 +298,8 @@ ul {
     height: 120px;
     margin-top: 4px;
     margin-bottom: 20px;
+    
+    font-size: 14px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -305,7 +309,6 @@ ul {
 
 .main-signup-textarea:focus {
     border: 1px solid var(--color-accent);
-    color: var(--color-accent);
     outline: none;
 }
 
@@ -333,18 +336,21 @@ ul {
 }
 
 .main-signup-checkbox-icon {
-    display: inline-block;
+    width: 16px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid var(--color-primary-dark);
     border-radius: 2px;
     margin-right: 7px;
+    transition: border-color var(--t-duration) var(--t-transition), background-color var(--t-duration) var(--t-transition);
 }
 
 .main-signup-checkbox:checked + .main-signup-checkbox-icon {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
 }
-
-
 
 .main-signup-button {
     box-sizing: border-box;
@@ -358,6 +364,11 @@ ul {
     display: block;
     margin: 30px auto 0 auto;
     cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
     
     transition: background-color var(--t-duration) var(--t-transition);
 }
@@ -762,9 +773,13 @@ ul {
 
 .footer-header-white {
     color: var(--color-light);
-    text-transform: uppercase;
     padding-top: 12px;
     padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.333;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .footer-section {
@@ -779,6 +794,15 @@ ul {
 
 .footer-mail-container {
     margin-left: auto;
+}
+
+.footer-email-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.333;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-light);
 }
 
 .footer-signup-form {
@@ -796,9 +820,12 @@ ul {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
+
+    transition: border-color var(--t-duration) var(--t-transition);
 }
 
 .footer-signup-field:focus {
+    border-color: var(--color-accent);
     outline: none;
 }
 
