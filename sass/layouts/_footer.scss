@@ -33,18 +33,17 @@
     margin-bottom: 9px;
 
     &:last-child {
-            margin-bottom: 0;
-        }
+        margin-bottom: 0;
+    }
 }
 
 .footer-header-white {
     color: var(--color-light);
     padding-top: 12px;
     padding-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.333;
-    letter-spacing: 0.03em;
+
+    @include font(700, 14px, 1.333, 0.03em);
+
     text-transform: uppercase;
 }
 
@@ -63,10 +62,8 @@
 }
 
 .footer-email-label {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.333;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.333, 0.03em);
+
     text-transform: uppercase;
     color: var(--color-light);
 }
@@ -108,10 +105,8 @@
     border-radius: 4px;
     border: 0;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
+    @include font(700, 16px, 1.875, 0.06em);
+
     cursor: pointer;
     transition: background-color var(--t-duration) var(--t-transition), box-shadow var(--t-duration) var(--t-transition);
 
@@ -126,7 +121,7 @@
     &:focus,
     &:hover,
     &:active {
-    background-color: var(--color-accent2);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+        background-color: var(--color-accent2);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }

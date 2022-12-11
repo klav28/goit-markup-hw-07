@@ -37,9 +37,7 @@
     padding-left: 24px;
     padding-right: 24px;
 
-    font-size: 18px;
-    line-height: 1.556;
-    letter-spacing: 0.03em;
+    @include font(null, 18px, 1.556, 0.03em);
 
     transform: translateY(101%);
     transition: transform var(--t-duration) var(--t-transition);
@@ -72,14 +70,11 @@
 }
 
 .portfolio-project-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.000;
-    letter-spacing: 0.06em;
+    @include font(700, 18px, 2.000, 0.06em);
 }
 
 .portfolio-project-type {
-    font-size: 16px;
-    line-height: 1.875;
+    @include font(null, 16px, 1.875, null);
+
     color: var(--color-primary-middle);
 }

@@ -2,12 +2,12 @@
     padding: 94px 0;
 }
 
-.benefit-list {
+.benefit__list {
     display: flex;
     gap: 30px;
 }
 
-.benefit-list-item {
+.benefit__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,15 +17,15 @@
     border-radius: 4px;
 }
 
-.benefit-name {
-    font-weight: 700;
-    line-height: 1.143;
+.benefit__name {
+    @include font(700, null, 1.143, null);
+    
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.benefit-detail {
+.benefit__detail {
     line-height: 1.714;
     color: var(--color-primary-middle);
 }

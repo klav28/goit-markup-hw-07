@@ -1,8 +1,8 @@
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
+
+    @include font(700, 26px, 1.192, null);
+
     text-decoration: none;
     margin-right: 93px;
 
