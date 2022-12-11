@@ -1,6 +1,5 @@
 .filter-button {
     font-family: inherit;
-    
     @include font(500, 16px, 1.625, null);
 
     background-color: var(--second-background-color);
