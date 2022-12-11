@@ -179,6 +179,41 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.soc-net {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.soc-net__item {
+  width: 44px;
+  height: 44px;
+}
+
+.soc-net__link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--first-background-color);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AFB1B8;
+  transition-property: background-color, color;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-transition);
+  transition-delay: 0;
+}
+.soc-net__link:hover, .soc-net__link:focus {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+}
+
+.soc-net__icon {
+  fill: currentColor;
+}
+
 .header-bloque {
   border: #ECECEC solid;
   border-width: 0 0 1px 0;
@@ -516,41 +551,6 @@ ul {
   color: var(--color-primary-middle);
 }
 
-.staff-list__social-network {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.staff-social-item {
-  width: 44px;
-  height: 44px;
-}
-
-.staff-soc-link {
-  width: 100%;
-  height: 100%;
-  background-color: var(--first-background-color);
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #AFB1B8;
-  transition-property: background-color, color;
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-transition);
-  transition-delay: 0;
-}
-.staff-soc-link:hover, .staff-soc-link:focus {
-  background-color: var(--color-accent);
-  color: var(--color-light);
-}
-
-.social-net-icon {
-  fill: currentColor;
-}
-
 .clients {
   padding: 94px 0;
 }
@@ -560,12 +560,12 @@ ul {
   gap: 30px;
 }
 
-.client-list-item {
+.client-list__item {
   width: 170px;
   height: 92px;
 }
 
-.client-list-link {
+.client-list__link {
   width: 100%;
   height: 100%;
   background-color: var(--first-background-color);
@@ -581,12 +581,12 @@ ul {
   transition-timing-function: var(--t-transition);
   transition-delay: 0;
 }
-.client-list-link:hover, .client-list-link:focus {
+.client-list__link:hover, .client-list__link:focus {
   border-color: var(--color-accent);
   color: var(--color-accent);
 }
 
-.client-logo {
+.client-list__logo {
   fill: currentColor;
 }
 

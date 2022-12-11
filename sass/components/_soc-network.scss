@@ -1,41 +1,37 @@
-.clients {
-    padding: 94px 0;
-}
-
-.client-list {
+.soc-net {
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    gap: 10px;
 }
 
-.client-list__item {
-    width: 170px;
-    height: 92px;
+.soc-net__item {
+    width: 44px;
+    height: 44px;
 }
 
-.client-list__link {
+.soc-net__link {
     width: 100%;
     height: 100%;
     background-color: var(--first-background-color);
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    border-radius: 50%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #AFB1B8;
 
-    transition-property: border-color, color;
+    transition-property: background-color, color;
     transition-duration: var(--t-duration);
     transition-timing-function: var(--t-transition);
     transition-delay: 0;
 
     &:hover,
     &:focus {
-        border-color: var(--color-accent);
-        color: var(--color-accent);
+        background-color: var(--color-accent);
+        color: var(--color-light);
     }
 }
 
-.client-list__logo {
+.soc-net__icon {
     fill: currentColor;
 }
