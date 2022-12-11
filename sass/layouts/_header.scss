@@ -35,18 +35,17 @@
     padding-bottom: 32px;
 
     transition: color var(--t-duration) var(--t-transition);
-}
 
-.header-nav-link:hover,
-.header-nav-link:focus {
-    color: var(--color-accent);
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
 }
 
 .header-icon-contact {
     margin-right: 10px;
     fill: currentColor;
 }
-
 
 .header-contacts-link {
     color: var(--color-primary-middle);
@@ -57,9 +56,9 @@
     align-items: center;
 
     transition: color var(--t-duration) var(--t-transition);
-}
-
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-    color: var(--color-accent);
+    
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
 }

@@ -14,19 +14,13 @@
     transition-duration: var(--t-duration);
     transition-timing-function: var(--t-transition);
     transition-delay: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--color-accent);
+        color: var(--color-light);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
-.filter-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    gap: 8px;
-}
-
-.filter-button:hover,
-.filter-button:focus,
-.filter-button:active {
-    background-color: var(--color-accent);
-    color: var(--color-light);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}

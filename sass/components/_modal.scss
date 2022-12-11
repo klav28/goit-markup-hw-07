@@ -45,13 +45,13 @@
     transition-duration: var(--t-duration);
     transition-timing-function: var(--t-transition);
     transition-delay: 0;
-}
 
-.modal-close-button:hover,
-.modal-close-button:focus {
-    background: var(--color-accent);
-    color: var(--color-light);
-    outline: none;
+    &:hover,
+    &:focus {
+        background: var(--color-accent);
+        color: var(--color-light);
+        outline: none;
+    }
 }
 
 .button-close {

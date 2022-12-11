@@ -28,12 +28,12 @@
     transition-duration: var(--t-duration);
     transition-timing-function: var(--t-transition);
     transition-delay: 0;
-}
 
-.client-list-link:hover,
-.client-list-link:focus {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
+    &:hover,
+    &:focus {
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+    }
 }
 
 .client-logo {

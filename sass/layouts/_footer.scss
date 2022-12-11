@@ -19,22 +19,22 @@
     text-decoration: none;
 
     transition: color var(--t-duration) var(--t-transition);
+
+    &:hover {
+        color: var(--color-accent);
+    }
 }
 
 .footer-opaque {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-link:hover {
-    color: var(--color-accent);
-}
-
 .footer-detail {
     margin-bottom: 9px;
-}
 
-.footer-detail:last-child {
-    margin-bottom: 0;
+    &:last-child {
+            margin-bottom: 0;
+        }
 }
 
 .footer-header-white {
@@ -88,11 +88,11 @@
     padding: 15px 16px;
 
     transition: border-color var(--t-duration) var(--t-transition);
-}
 
-.footer-signup-field:focus {
-    border-color: var(--color-accent);
-    outline: none;
+    &:focus {
+        border-color: var(--color-accent);
+        outline: none;
+    }
 }
 
 .footer-signup-button {
@@ -114,19 +114,19 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     transition: background-color var(--t-duration) var(--t-transition), box-shadow var(--t-duration) var(--t-transition);
-}
 
-.footer-signup-button::after {
-    content: '';
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url(../images/icon-send.svg);
-}
+    &::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-image: url(../images/icon-send.svg);
+    }
 
-.footer-signup-button:focus,
-.footer-signup-button:hover,
-.footer-signup-button:active {
+    &:focus,
+    &:hover,
+    &:active {
     background-color: var(--color-accent2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 }
